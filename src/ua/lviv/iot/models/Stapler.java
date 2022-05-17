@@ -18,4 +18,3 @@ public class Stapler extends AbstractTool{
         this.numberOfBrackets = numberOfBrackets;
     }
 }
-
