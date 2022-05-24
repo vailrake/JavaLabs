@@ -10,6 +10,15 @@ public class Saw extends AbstractTool {
         this.lengthInSm = lengthInSm;
     }
 
+    public String getHeaders() {
+        return super.getHeaders() + ",lengthInSm";
+    }
+
+    public String toCSV() {
+        return super.toCSV() + "," + lengthInSm;
+
+    }
+
     public float getLengthInSm() {
         return lengthInSm;
     }
