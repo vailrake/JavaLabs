@@ -15,6 +15,14 @@ public class AbstractTool {
         this.powerConsumption = powerConsumption;
     }
 
+    public String getHeaders() {
+        return "name,producer,toolType,powerConsumption";
+    }
+
+    public String toCSV() {
+        return name + "," + producer + "," + toolType + "," + powerConsumption;
+    }
+
     public String getName() {
         return name;
     }
@@ -46,4 +54,5 @@ public class AbstractTool {
     public void setPowerConsumption(int powerConsumption) {
         this.powerConsumption = powerConsumption;
     }
+
 }

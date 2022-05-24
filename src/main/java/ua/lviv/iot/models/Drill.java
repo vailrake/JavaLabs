@@ -2,7 +2,7 @@ package ua.lviv.iot.models;
 
 import ua.lviv.iot.enums.ToolType;
 
-public class Drill extends AbstractTool{
+public class Drill extends AbstractTool {
 
     private int cartridgeDiameterInMm;
     private int maxRPM;
@@ -11,6 +11,15 @@ public class Drill extends AbstractTool{
         super(name, producer, toolType, powerConsumption);
         this.cartridgeDiameterInMm = cartridgeDiameterInSm;
         this.maxRPM = maxRPM;
+    }
+
+    public String getHeaders() {
+        return super.getHeaders() + ",cartridgeDiameterInMm,maxRPM";
+    }
+
+    public String toCSV() {
+        return super.toCSV() + "," + cartridgeDiameterInMm + "," + maxRPM;
+
     }
 
     public int getCartridgeDiameterInSm() {
