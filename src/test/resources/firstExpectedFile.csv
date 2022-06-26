@@ -1,0 +1,8 @@
+name,producer,toolType,powerConsumption,cartridgeDiameterInMm,maxRPM
+Drill,DeWalt,CHAIRTOOL,1500,16,2500
+name,producer,toolType,powerConsumption,headWeightInG
+Hammer,DniproM,SOFATOOL,0,750.0
+name,producer,toolType,powerConsumption,numberOfBrackets
+Stapler,Makita,SOFATOOL,150,75
+name,producer,toolType,powerConsumption,lengthInSm
+Druzhba 2,Bosch,CHAIRTOOL,500,80.0
